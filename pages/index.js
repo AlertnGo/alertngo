@@ -1,5 +1,7 @@
 import styles from "./page.module.scss";
 import Link from "next/link";
+import { Input, Button } from "@mantine/core";
+import { IconAt } from "@tabler/icons-react";
 
 export default function Home() {
   return (
@@ -11,11 +13,17 @@ export default function Home() {
           other people with the help of our Qr code.
         </p>
 
-        <form>
-          <input type="text" placeholder="Enter your email" />
-          <button>Join Waitlist</button>
-          <Link href="/app">app</Link>
-        </form>
+        <Input
+          icon={<IconAt />}
+          variant="filled"
+          placeholder="Your email Here"
+          size="md"
+        />
+
+        <Button>Join Waitlist</Button>
+        <Link href="/main">
+          <Button>App</Button>
+        </Link>
       </section>
     </main>
   );
