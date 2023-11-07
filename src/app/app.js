@@ -1,7 +1,6 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./app.module.css";
 
-export default function Home() {
+export default function App() {
   return (
     <main className={styles.main}>
       <section>
