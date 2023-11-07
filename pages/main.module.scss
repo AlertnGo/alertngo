@@ -1,0 +1,17 @@
+.app {
+  background: var(--main);
+}
+
+.mainGride {
+  padding: var(--gap);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left {
+  border: 1px solid var(--main);
+  padding: 0 15px;
+  margin: 0 auto;
+}

@@ -1,6 +1,6 @@
-import styles from "./page.module.scss";
+import styles from "./index.module.scss";
 import Link from "next/link";
-import { Input, Button } from "@mantine/core";
+import { Input, Button, Group } from "@mantine/core";
 import { IconAt } from "@tabler/icons-react";
 
 export default function Home() {
@@ -19,11 +19,13 @@ export default function Home() {
           placeholder="Your email Here"
           size="md"
         />
-
-        <Button>Join Waitlist</Button>
-        <Link href="/main">
-          <Button>App</Button>
-        </Link>
+        <Group>
+          {" "}
+          <Button>Join Waitlist</Button>
+          <Link href="/main">
+            <Button>App</Button>
+          </Link>
+        </Group>
       </section>
     </main>
   );
