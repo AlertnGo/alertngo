@@ -1,6 +1,6 @@
 import styles from "./app.module.scss";
 
-export default function App() {
+export default function Main() {
   return (
     <main className={styles.app}>
       <section>
