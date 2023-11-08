@@ -1,17 +1,18 @@
-.app {
-  background: var(--main);
+.main {
+  background: var(--lightwhite);
 }
 
 .mainGride {
-  padding: var(--gap);
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-}
+  align-self: start;
 
-.left {
-  border: 1px solid var(--main);
-  padding: 0 15px;
-  margin: 0 auto;
+  .left {
+    padding: var(--gap);
+  }
+
+  .right {
+    padding: var(--gap);
+  }
 }
