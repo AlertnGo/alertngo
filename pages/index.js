@@ -10,8 +10,7 @@ export default function Home() {
         <h1>Alertngo</h1>
         <p>
           Alertngo est une application web qui permet aux utilisateurs de
-          communiquer avec d'autres personnes à l'aide d'un code Qr. avec
-          d'autres personnes à l'aide de notre code Qr.
+          communiquer avec d'autres personnes à l'aide d'un code Qr.
         </p>
         <Space h="md" />
 

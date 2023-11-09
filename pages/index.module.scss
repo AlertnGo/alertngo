@@ -3,4 +3,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: -webkit-linear-gradient(blue, rgb(0, 187, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
 }
