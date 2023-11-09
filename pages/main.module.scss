@@ -10,6 +10,7 @@
   justify-content: flex-start;
   align-self: start;
   gap: var(--gap);
+  min-height: clamp(50vh, 70%, 100vh);
 
   .left {
     width: 30%;

@@ -2,13 +2,15 @@ import styles from "./main.module.scss";
 import { useState } from "react";
 import { NavLink } from "@mantine/core";
 import {
-  IconHome2,
   IconHeart,
   IconQrcode,
   IconUser,
   IconUserScan,
 } from "@tabler/icons-react";
-import MainComponentOne from "./mainComponentOne";
+import MainScan from "./mainComponants/mainScan";
+import MainUser from "./mainComponants/mainUser";
+import MainCode from "./mainComponants/mainCode";
+import MainFavourite from "./mainComponants/mainFavourite";
 
 export default function Main() {
   const [currentMode, setCurrentMode] = useState(1);
@@ -41,10 +43,10 @@ export default function Main() {
         <div className={styles.right}>
           {
             {
-              1: <MainComponentOne />,
-              2: <div>2</div>,
-              3: <div>3</div>,
-              4: <div>4</div>,
+              1: <MainScan />,
+              2: <MainCode />,
+              3: <MainFavourite />,
+              4: <MainUser />,
             }[currentMode]
           }
         </div>

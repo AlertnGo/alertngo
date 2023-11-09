@@ -11,9 +11,10 @@ export default function Header() {
       </Link>
       <nav>
         <Link href="/main">App</Link>
-        <Link href="/main">À propos</Link>
-        <Link href="/main">Se connecter</Link>
-        <Button>S'inscrire</Button>
+        <Link href="/signin">Se connecter</Link>
+        <Link href="/login">
+          <Button>S'inscrire</Button>
+        </Link>
       </nav>
     </header>
   );

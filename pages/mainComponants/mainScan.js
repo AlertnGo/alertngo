@@ -1,4 +1,4 @@
-import styles from "./main.module.scss";
+import styles from "./mainStyle.module.scss";
 import { useState } from "react";
 
 import {
@@ -13,7 +13,7 @@ import {
 } from "@mantine/core";
 import { IconAt, IconScan, IconSearch } from "@tabler/icons-react";
 
-export default function MainComponentOne() {
+export default function MainScan() {
   const [currentTab, setCurrentTab] = useState("Search");
 
   return (
@@ -44,9 +44,10 @@ export default function MainComponentOne() {
       />
       <Space h="md" />
       {currentTab == "Search" ? (
-        <div className={styles.search}>
-          <Group w={"100%"}>
+        <div className={styles.searchContainer}>
+          <Group>
             <Input
+              width={800}
               leftSection={<IconAt size={16} />}
               placeholder="Nom d'utilisateur"
             />
@@ -54,7 +55,7 @@ export default function MainComponentOne() {
           </Group>
         </div>
       ) : (
-        <div className={styles.scan}>
+        <div className={styles.scanContainer}>
           Malheuresment , la fonctionnalité de scan n'est pas encore disponible
           sur le site web. mais vous pouvez toujours utiliser l'application
           mobile.
