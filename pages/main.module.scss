@@ -7,12 +7,17 @@
   flex-direction: row;
   justify-content: flex-start;
   align-self: start;
+  gap: var(--gap);
 
   .left {
+    width: 30%;
     padding: var(--gap);
   }
 
   .right {
+    background: var(--white);
+    width: 75%;
     padding: var(--gap);
+    border-radius: var(--border-radius);
   }
 }

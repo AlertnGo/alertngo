@@ -1,6 +1,18 @@
 import styles from "./main.module.scss";
-import { Center, SegmentedControl, Box, rem, NavLink } from "@mantine/core";
+import { useState } from "react";
 import {
+  Center,
+  SegmentedControl,
+  Box,
+  rem,
+  NavLink,
+  Input,
+  Group,
+  Button,
+  Space,
+} from "@mantine/core";
+import {
+  IconAt,
   IconHome2,
   IconHeart,
   IconQrcode,
@@ -10,6 +22,8 @@ import {
 } from "@tabler/icons-react";
 
 export default function Main() {
+  const [currentTab, setCurrentTab] = useState("Search");
+
   return (
     <main className={styles.main}>
       <section className={styles.mainGride}>
@@ -34,6 +48,8 @@ export default function Main() {
 
         <div className={styles.right}>
           <SegmentedControl
+            value={currentTab}
+            onChange={setCurrentTab}
             data={[
               {
                 value: "Scan",
@@ -55,6 +71,26 @@ export default function Main() {
               },
             ]}
           />
+
+          <Space h="md" />
+
+          {currentTab == "Search" ? (
+            <div className={styles.scan}>
+              Malheuresment , la fonctionnalité de scan n'est pas encore
+              disponible sur le site web. mais vous pouvez toujours utiliser
+              l'application mobile.
+            </div>
+          ) : (
+            <div className={styles.search}>
+              <Group w={"100%"}>
+                <Input
+                  leftSection={<IconAt size={16} />}
+                  placeholder="Nom d'utilisateur"
+                />
+                <Button>Search</Button>
+              </Group>
+            </div>
+          )}
         </div>
       </section>
     </main>
