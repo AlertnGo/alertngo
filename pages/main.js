@@ -6,6 +6,7 @@ import {
   IconHeart,
   IconQrcode,
   IconUser,
+  IconUserScan,
 } from "@tabler/icons-react";
 import MainComponentOne from "./mainComponentOne";
 
@@ -17,8 +18,8 @@ export default function Main() {
         <div className={styles.left}>
           <NavLink
             onClick={() => setCurrentMode(1)}
-            label="Accueil"
-            leftSection={<IconHome2 size="1rem" stroke={1.5} />}
+            label="Trouver"
+            leftSection={<IconUserScan size="1rem" stroke={1.5} />}
           />
           <NavLink
             onClick={() => setCurrentMode(2)}

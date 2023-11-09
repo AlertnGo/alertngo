@@ -5,7 +5,7 @@ import { IconAt } from "@tabler/icons-react";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main className={styles.main2}>
       <section className={styles.hero}>
         <h1>Alertngo</h1>
         <p>
@@ -13,6 +13,7 @@ export default function Home() {
           communiquer avec d'autres personnes à l'aide d'un code Qr. avec
           d'autres personnes à l'aide de notre code Qr.
         </p>
+        <Space h="md" />
 
         <Group>
           <Input
@@ -23,10 +24,6 @@ export default function Home() {
           />
           <Button size="md">S'inscrire sur la liste d'attente</Button>
         </Group>
-        <Space h="md" />
-        <Link href="/main">
-          <Button variant="outline">voir l'application</Button>
-        </Link>
       </section>
     </main>
   );

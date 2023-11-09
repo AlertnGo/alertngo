@@ -1,0 +1,28 @@
+.header {
+  padding: var(--gap);
+  width: var(--max-width);
+  margin: var(--gap) auto;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--white);
+  img {
+    width: 50px;
+    height: 100%;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    a {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: var(--maincolor);
+      }
+    }
+  }
+}
