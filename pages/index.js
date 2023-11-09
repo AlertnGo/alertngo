@@ -9,22 +9,23 @@ export default function Home() {
       <section className={styles.hero}>
         <h1>Alertngo</h1>
         <p>
-          Alertngo is a web application that allows users to communicate with
-          other people with the help of our Qr code.
+          Alertngo est une application web qui permet aux utilisateurs de
+          communiquer avec d'autres personnes à l'aide d'un code Qr. avec
+          d'autres personnes à l'aide de notre code Qr.
         </p>
 
         <Group>
           <Input
             icon={<IconAt />}
             variant="filled"
-            placeholder="Your email Here"
+            placeholder="Votre email Ici"
             size="md"
           />
-          <Button>Join Waitlist</Button>
+          <Button size="md">S'inscrire sur la liste d'attente</Button>
         </Group>
         <Space h="md" />
         <Link href="/main">
-          <Button>App</Button>
+          <Button variant="outline">voir l'application</Button>
         </Link>
       </section>
     </main>

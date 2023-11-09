@@ -29,19 +29,19 @@ export default function Main() {
       <section className={styles.mainGride}>
         <div className={styles.left}>
           <NavLink
-            label="Home"
+            label="Accueil"
             leftSection={<IconHome2 size="1rem" stroke={1.5} />}
           />
           <NavLink
-            label="My Codes"
+            label="Mes codes"
             leftSection={<IconQrcode size="1rem" stroke={1.5} />}
           />
           <NavLink
-            label="Favorites"
+            label="Favoris"
             leftSection={<IconHeart size="1rem" stroke={1.5} />}
           />
           <NavLink
-            label="Profile"
+            label="Profil"
             leftSection={<IconUser size="1rem" stroke={1.5} />}
           />
         </div>
