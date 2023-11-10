@@ -13,7 +13,7 @@ export default function Header() {
         <Link href="/main">App</Link>
         <Link href="/signin">Se connecter</Link>
         <Link href="/login">
-          <Button>S'inscrire</Button>
+          <Button>S'inscrire </Button>
         </Link>
       </nav>
     </header>
