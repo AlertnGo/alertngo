@@ -24,3 +24,19 @@
     border-radius: var(--border-radius);
   }
 }
+
+@media (max-width: 900px) {
+  .main {
+    width: 96%;
+  }
+
+  .mainGride {
+    flex-direction: column-reverse;
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+}

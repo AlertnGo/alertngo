@@ -26,3 +26,10 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .header {
+    width: 96%;
+    gap: 10px;
+  }
+}
