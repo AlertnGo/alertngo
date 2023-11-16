@@ -7,10 +7,10 @@ import {
   IconUser,
   IconUserScan,
 } from "@tabler/icons-react";
-import MainScan from "./mainComponants/mainScan";
-import MainUser from "./mainComponants/mainUser";
-import MainCode from "./mainComponants/mainCode";
-import MainFavourite from "./mainComponants/mainFavourite";
+import MainScan from "./mainComponents/mainScan";
+import MainUser from "./mainComponents/mainUser";
+import MainCode from "./mainComponents/mainCode";
+import MainFavourite from "./mainComponents/mainFavourite";
 
 export default function Main() {
   const [currentMode, setCurrentMode] = useState(1);
