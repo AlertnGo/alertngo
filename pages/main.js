@@ -49,22 +49,46 @@ export default function Main() {
             <NavLink
               onClick={() => setCurrentMode(1)}
               label="Trouver"
-              leftSection={<IconUserScan size="1rem" stroke={1.5} />}
+              leftSection={
+                <IconUserScan
+                  size="1.2rem"
+                  stroke={1}
+                  color={currentMode === 1 ? "#218BE6" : "#000000"}
+                />
+              }
             />
             <NavLink
               onClick={() => setCurrentMode(2)}
               label="Mes Codes"
-              leftSection={<IconQrcode size="1rem" stroke={1.5} />}
+              leftSection={
+                <IconQrcode
+                  size="1.2rem"
+                  stroke={1}
+                  color={currentMode === 2 ? "#218BE6" : "#000000"}
+                />
+              }
             />
             <NavLink
               onClick={() => setCurrentMode(3)}
               label="Favoris"
-              leftSection={<IconHeart size="1rem" stroke={1.5} />}
+              leftSection={
+                <IconHeart
+                  size="1.2rem"
+                  stroke={1}
+                  color={currentMode === 3 ? "#218BE6" : "#000000"}
+                />
+              }
             />
             <NavLink
               onClick={() => setCurrentMode(4)}
               label="Profil"
-              leftSection={<IconUser size="1rem" stroke={1.5} />}
+              leftSection={
+                <IconUser
+                  size="1.2rem"
+                  stroke={1}
+                  color={currentMode === 4 ? "#218BE6" : "#000000"}
+                />
+              }
             />
           </div>
 
