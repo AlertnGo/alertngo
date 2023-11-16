@@ -9,6 +9,14 @@ export default function MainCode() {
       <Code name="BMW" id="6545" />
       <Code name="Chat" id="5445" />
       <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
+      <Code name="Meow" id="9856" />
       <Code name="Ma voiture 2" id="1000" />
     </div>
   );

@@ -4,6 +4,10 @@
   border-radius: var(--border-radius);
 }
 
+.mobileNav {
+  display: none;
+}
+
 .mainGride {
   display: flex;
   flex-direction: row;
@@ -20,31 +24,38 @@
   .right {
     background: var(--white);
     width: 75%;
+    height: 80vh;
+    overflow-x: scroll;
     padding: var(--gap);
     border-radius: var(--border-radius);
   }
 }
 
 @media (max-width: 900px) {
+  .mobileNav {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.584);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-filter: blur(10px);
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
   .main {
-    width: 96%;
+    width: 98%;
   }
 
   .mainGride {
     flex-direction: column-reverse;
     .left {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-
-      a {
-        width: 25%;
-
-        div:nth-child(2) {
-          display: none;
-        }
-      }
+      display: none;
     }
+
     .right {
       width: 100%;
     }
