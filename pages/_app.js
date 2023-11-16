@@ -8,7 +8,6 @@ import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
   const preferredColorScheme = useColorScheme();
-  const [colorScheme, setColorScheme] = useState(preferredColorScheme);
 
   const theme = createTheme({
     fontFamily: "Lato, sans-serif",
@@ -16,11 +15,17 @@ export default function App({ Component, pageProps }) {
   });
 
   return (
-    <MantineProvider defaultColorScheme="light" theme={theme}>
+    <MantineProvider theme={theme}>
       <Head>
         <title>Alertngo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <link rel="apple-touch-icon" href="./favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="57x57"
+          href="./apple-touch-icon-57x57.png"
+        />
       </Head>
       <Header />
       <Component {...pageProps} />

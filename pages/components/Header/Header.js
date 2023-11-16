@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./header.module.scss";
 import { Button } from "@mantine/core";
+import Toggle from "../Theme/themeToggle";
 
 export default function Header() {
   return (
@@ -15,6 +16,7 @@ export default function Header() {
         <Link href="/login">
           <Button>S'inscrire </Button>
         </Link>
+        <Button>{/* <Toggle /> */}</Button>
       </nav>
     </header>
   );
