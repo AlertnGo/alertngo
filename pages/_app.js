@@ -3,7 +3,7 @@ import { MantineProvider, createTheme } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { useColorScheme } from "@mantine/hooks";
 import Head from "next/head";
-import Header from "./Header";
+import Header from "./components/Header/Header";
 import { useState } from "react";
 
 export default function App({ Component, pageProps }) {

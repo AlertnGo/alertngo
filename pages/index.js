@@ -1,5 +1,4 @@
 import styles from "./index.module.scss";
-import Link from "next/link";
 import { Input, Button, Group, Space } from "@mantine/core";
 import { IconAt } from "@tabler/icons-react";
 
