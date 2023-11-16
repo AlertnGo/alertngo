@@ -16,7 +16,9 @@ export default function Header() {
         <Link href="/login">
           <Button>S'inscrire </Button>
         </Link>
-        <Button>{/* <Toggle /> */}</Button>
+        {/* <Button>
+          <Toggle />
+        </Button> */}
       </nav>
     </header>
   );
