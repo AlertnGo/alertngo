@@ -6,6 +6,14 @@
   gap: var(--gap);
 }
 
+.actionBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gap) 0;
+}
+
 .mainLikedUserContainer {
   display: flex;
   flex-direction: row;
@@ -32,4 +40,16 @@
   padding: var(--gap);
   border-radius: var(--border-radius);
   border: 3px solid var(--lightwhite);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--gap);
+  border: 1px solid var(--lightwhite);
+  border-radius: var(--border-radius);
+  background: var(--lightwhite);
 }
