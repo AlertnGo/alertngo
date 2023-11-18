@@ -3,7 +3,7 @@ import {
   Text,
   SimpleGrid,
   UnstyledButton,
-  Group,
+  SegmentedControl,
   useMantineTheme,
   Input,
   Space,
@@ -44,10 +44,16 @@ export default function AddCode() {
         <Input placeholder="BMW M3" />
       </Input.Wrapper>
       <Space h="md" />
+
       <Input.Wrapper size="md" label="Type du Placement">
         <SimpleGrid cols={3} mt="md">
           {items}
         </SimpleGrid>
+      </Input.Wrapper>
+      <Space h="md" />
+
+      <Input.Wrapper size="md" label="Status">
+        <SegmentedControl fullWidth size="md" data={["En pause", "Active"]} />
       </Input.Wrapper>
       <Button color="blue" my="md" fullWidth>
         Ajouter

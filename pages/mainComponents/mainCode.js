@@ -12,7 +12,7 @@ export default function MainCode() {
         <Modal
           opened={opened}
           onClose={close}
-          title=" Ajouter un code"
+          title=" Crer un QR code"
           centered
         >
           <AddCode />
