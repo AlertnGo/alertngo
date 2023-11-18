@@ -1,6 +1,7 @@
 import styles from "./index.module.scss";
 import { Input, Button, Group, Space } from "@mantine/core";
 import { IconAt } from "@tabler/icons-react";
+import LottiePlayer from "@lottiefiles/react-lottie-player";
 
 export default function Home() {
   return (
@@ -12,7 +13,6 @@ export default function Home() {
           communiquer avec d'autres personnes à l'aide d'un code Qr.
         </p>
         <Space h="md" />
-
         <Group>
           <Input
             icon={<IconAt />}
