@@ -16,7 +16,7 @@ export default function Login() {
   return (
     <Container size={450} my={40}>
       <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-        <TextInput label="Email" placeholder="you@mantine.dev" required />
+        <TextInput label="Email" placeholder="you@gmail.com" required />
         <PasswordInput
           label="Mot de passe"
           placeholder="Votre mot de passe"
@@ -25,9 +25,11 @@ export default function Login() {
         />
         <Group justify="space-between" mt="lg">
           <Checkbox label="Se souvenir de moi" />
-          <Anchor component="button" size="sm">
-            Mot de passe oublié ?
-          </Anchor>
+          <Link href="/forgotPassword">
+            <Anchor component="button" size="sm">
+              Mot de passe oublié ?
+            </Anchor>
+          </Link>
         </Group>
         <Button fullWidth mt="xl">
           Se connecter

@@ -16,7 +16,7 @@ export default function Signin() {
   return (
     <Container size={450} my={40}>
       <Paper withBorder shadow="md" p={30} mt={30} radius="md">
-        <TextInput label="Email" placeholder="you@mantine.dev" required />
+        <TextInput label="Email" placeholder="you@gmail.com" required />
         <TextInput label="Nom" placeholder="Leo" required />
         <TextInput label="Pré-nom" placeholder="Dass" required />
         <PasswordInput
