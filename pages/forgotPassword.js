@@ -35,7 +35,7 @@ export default function ForgotPassword() {
                   style={{ width: rem(12), height: rem(12) }}
                   stroke={1.5}
                 />
-                <Box ml={5}>Back to the login page</Box>
+                <Box ml={5}>Retour</Box>
               </Center>
             </Anchor>
           </Link>
