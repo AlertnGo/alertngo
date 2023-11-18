@@ -6,6 +6,8 @@ import {
   Group,
   useMantineTheme,
   Input,
+  Space,
+  Button,
 } from "@mantine/core";
 import {
   IconBike,
@@ -38,18 +40,18 @@ export default function AddCode() {
 
   return (
     <Card radius="md" className={styles.card}>
-      <Group>
-        <label size="xl">
-          Nom du QR code
-          <Input placeholder="Nom du QR code" />
-        </label>
-      </Group>
-      <Group justify="space-between">
-        <Text size="xl">Type</Text>
-      </Group>
-      <SimpleGrid cols={3} mt="md">
-        {items}
-      </SimpleGrid>
+      <Input.Wrapper size="md" label="  Nom du QR code">
+        <Input placeholder="BMW M3" />
+      </Input.Wrapper>
+      <Space h="md" />
+      <Input.Wrapper size="md" label="Type du Placement">
+        <SimpleGrid cols={3} mt="md">
+          {items}
+        </SimpleGrid>
+      </Input.Wrapper>
+      <Button color="blue" my="md" fullWidth>
+        Ajouter
+      </Button>
     </Card>
   );
 }
