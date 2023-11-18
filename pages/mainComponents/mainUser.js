@@ -1,6 +1,5 @@
-import { Avatar, Text, Group } from "@mantine/core";
-import { IconAt } from "@tabler/icons-react";
-import styles from "../main.module.scss";
+import { Avatar, Text, Group, Button } from "@mantine/core";
+import { IconAt, IconUserEdit } from "@tabler/icons-react";
 
 export default function MainUser() {
   return (
@@ -25,6 +24,9 @@ export default function MainUser() {
           <Text fz="sm" c="dimmed">
             Depuis octobre 2021
           </Text>
+          <Button variant="light" leftSection={<IconUserEdit size={14} />}>
+            Modifier
+          </Button>
         </div>
       </Group>
     </div>

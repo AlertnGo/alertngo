@@ -1,7 +1,7 @@
 .mainQRcodeContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: var(--gap);
 }
@@ -17,7 +17,7 @@
 .mainLikedUserContainer {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: justify-content;
   flex-wrap: wrap;
   gap: var(--gap);
 }

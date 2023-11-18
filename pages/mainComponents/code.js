@@ -3,12 +3,12 @@ import { IconShare } from "@tabler/icons-react";
 
 export default function Code(props) {
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder>
+    <Card shadow="sm" padding="lg" radius="md" withBorder width="300px">
       <Card.Section>
         <Image
           src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSh-wrQu254qFaRcoYktJ5QmUhmuUedlbeMaQeaozAVD4lh4ICsGdBNubZ8UlMvWjKC"
-          height={200}
-          width={170}
+          height={250}
+          width={250}
           alt="Norway"
         />
       </Card.Section>
