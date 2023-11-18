@@ -43,6 +43,7 @@ export default function AddCode() {
       <Input.Wrapper size="md" label="  Nom du QR code">
         <Input placeholder="BMW M3" />
       </Input.Wrapper>
+
       <Space h="md" />
 
       <Input.Wrapper size="md" label="Type du Placement">
@@ -50,11 +51,15 @@ export default function AddCode() {
           {items}
         </SimpleGrid>
       </Input.Wrapper>
+
       <Space h="md" />
 
       <Input.Wrapper size="md" label="Status">
-        <SegmentedControl fullWidth size="md" data={["En pause", "Active"]} />
+        <SegmentedControl fullWidth size="sm" data={["Actif", "Pause"]} />
       </Input.Wrapper>
+
+      <Space h="md" />
+
       <Button color="blue" my="md" fullWidth>
         Ajouter
       </Button>

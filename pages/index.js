@@ -1,7 +1,6 @@
 import styles from "./index.module.scss";
 import { Input, Button, Group, Space } from "@mantine/core";
 import { IconAt } from "@tabler/icons-react";
-import LottiePlayer from "@lottiefiles/react-lottie-player";
 
 export default function Home() {
   return (
