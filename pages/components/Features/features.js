@@ -34,7 +34,7 @@ const mockdata = [
     icon: IconCat,
   },
   {
-    title: "Utile pour les personnes l'autre ",
+    title: "Utile pour l'autre  personnes ",
     description:
       "Si vous avez besoin de contacter le propriétaire de la voiture, utilisez alertngo. ",
     icon: IconAccessPoint,
