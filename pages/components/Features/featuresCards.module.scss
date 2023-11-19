@@ -1,0 +1,39 @@
+.title {
+  font-size: 34px;
+  font-weight: 900;
+
+  @media (max-width: 900px) {
+    font-size: 24px;
+  }
+}
+
+.description {
+  max-width: 600px;
+  margin: auto;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--lightwhite);
+    width: 45px;
+    height: 2px;
+    margin-top: var(--gap);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.card {
+  border: 1px solid var(--lightwhite);
+}
+
+.cardTitle {
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--white);
+    width: 45px;
+    height: 2px;
+    margin-top: var(--gap);
+  }
+}
