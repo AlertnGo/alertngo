@@ -17,21 +17,34 @@ import {
   IconPlus,
 } from "@tabler/icons-react";
 import styles from "./mainStyle.module.scss";
+import { useState } from "react";
 
 const mockdata = [
   { title: "Voiture", icon: IconCar, color: "violet" },
-  { title: "Velo", icon: IconBike, color: "indigo" },
+  { title: "Velo", icon: IconBike, color: "red" },
   { title: "Moto", icon: IconMotorbike, color: "indigo" },
-  { title: "Personnel", icon: IconMan, color: "blue" },
-  { title: "Autre", icon: IconPlus, color: "orange" },
+  { title: "Personnel", icon: IconMan, color: "teal" },
+  { title: "Autre", icon: IconPlus, color: "yellow" },
 ];
 
 export default function AddCode() {
   const theme = useMantineTheme();
+  const [active, setActive] = useState("Voiture");
 
   const items = mockdata.map((item) => (
-    <UnstyledButton key={item.title} className={styles.item}>
-      <item.icon color={theme.colors[item.color][6]} size="2rem" />
+    <UnstyledButton
+      key={item.title}
+      className={styles.item}
+      onClick={() => setActive(item.title)}
+      style={
+        active === item.title
+          ? {
+              border: "2px solid #4bbce592",
+            }
+          : {}
+      }
+    >
+      <item.icon color={theme.colors[item.color][5]} size="2rem" />
       <Text size="xs" mt={7}>
         {item.title}
       </Text>
