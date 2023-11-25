@@ -1,4 +1,5 @@
 import { Title, Text, Button, Container, Group, Space } from "@mantine/core";
+import Link from "next/link";
 
 export default function NotFoundTitle() {
   return (
@@ -19,9 +20,11 @@ export default function NotFoundTitle() {
       </Text>
       <Space h={20} />
       <Group justify="center">
-        <Button variant="subtle" size="md">
-          Me ramener à la page d'accueil
-        </Button>
+        <Link href="/">
+          <Button variant="subtle" size="md">
+            Me ramener à la page d'accueil
+          </Button>
+        </Link>
       </Group>
     </Container>
   );

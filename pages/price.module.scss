@@ -1,0 +1,32 @@
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .priceContainer {
+    gap: var(--gap);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    .priceCard {
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: var(--gap);
+      border: 2px solid var(--lightwhite);
+      border-radius: var(--border-radius);
+      background: var(--lightwhite);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .price {
+    background: #000;
+  }
+}

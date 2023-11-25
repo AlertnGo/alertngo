@@ -12,13 +12,11 @@ export default function Header() {
       </Link>
       <nav>
         <Link href="/main">App</Link>
+        <Link href="/price">Prix</Link>
         <Link href="/signin">Se connecter</Link>
         <Link href="/login">
           <Button>S'inscrire </Button>
         </Link>
-        {/* <Button>
-          <Toggle />
-        </Button> */}
       </nav>
     </header>
   );
