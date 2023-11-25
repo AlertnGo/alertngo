@@ -20,20 +20,15 @@ export default function Code(props) {
       </Card.Section>
 
       <Group justify="space-between" mt="xs">
-        <Text fw={500}>{props.name}</Text>
+        <Text fw={400}>{props.name}</Text>
         <Text size="sm" c="dimmed">
           #{props.id}
         </Text>
       </Group>
 
-      <Group mt="xs">
-        <Button variant="light" color="blue" radius="xs">
-          Modifier
-        </Button>
-        <Button variant="light" color="cyan" radius="md">
-          <IconShare size="0.8rem" stroke={1.5} mr="2" />
-        </Button>
-      </Group>
+      <Button variant="outline" color="blue" radius="md" mt={5}>
+        Modifier
+      </Button>
     </Card>
   );
 }

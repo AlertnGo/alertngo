@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
   });
 
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} defaultColorScheme="light">
       <Head>
         <title>Alertngo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
