@@ -1,32 +1,37 @@
-import { Card, Image, Text, Badge, Button, Group } from "@mantine/core";
+import { Card, Text, Button, Group } from "@mantine/core";
 import { IconShare } from "@tabler/icons-react";
+import styles from "./mainStyle.module.scss";
 
 export default function Code(props) {
   return (
-    <Card shadow="sm" padding="lg" radius="md" withBorder width="300px">
+    <Card
+      shadow="sm"
+      padding="lg"
+      radius="md"
+      withBorder
+      className={styles.card}
+    >
       <Card.Section>
-        <Image
+        <img
           src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSh-wrQu254qFaRcoYktJ5QmUhmuUedlbeMaQeaozAVD4lh4ICsGdBNubZ8UlMvWjKC"
-          height={250}
-          width={250}
+          className={styles.image}
           alt="Norway"
         />
       </Card.Section>
 
       <Group justify="space-between" mt="xs">
         <Text fw={500}>{props.name}</Text>
+        <Text size="sm" c="dimmed">
+          #{props.id}
+        </Text>
       </Group>
 
-      <Text size="sm" c="dimmed">
-        #{props.id}
-      </Text>
-
       <Group mt="xs">
-        <Button variant="light" color="blue" radius="md">
+        <Button variant="light" color="blue" radius="xs">
           Modifier
         </Button>
         <Button variant="light" color="cyan" radius="md">
-          <IconShare size="1rem" stroke={1.5} />
+          <IconShare size="0.8rem" stroke={1.5} mr="2" />
         </Button>
       </Group>
     </Card>

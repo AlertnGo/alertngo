@@ -73,3 +73,27 @@
     }
   }
 }
+
+.card {
+  width: 200px;
+  height: 300px;
+
+  .image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 250px;
+    height: 350px;
+
+    .image {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}
