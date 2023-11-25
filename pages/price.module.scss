@@ -20,9 +20,16 @@
       justify-content: center;
       text-align: center;
       gap: var(--gap);
-      border: 2px solid var(--lightwhite);
-      border-radius: var(--border-radius);
-      background: var(--lightwhite);
+      backdrop-filter: blur(100px);
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(245, 245, 245, 0.3),
+        white 100px,
+        whitesmoke 100px
+      );
+      border-width: 2px;
+      border-style: solid;
+      animation: infinite borderAnimation 5s ease-in;
     }
   }
 }
@@ -37,5 +44,20 @@
         width: 100%;
       }
     }
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-image: linear-gradient(to right, whitesmoke, darkblue, #218be6) 2;
+  }
+  50% {
+    border-image: linear-gradient(to right, #218be6, whitesmoke, darkblue) 2;
+  }
+  70% {
+    border-image: linear-gradient(to right, darkblue, #218be6, whitesmoke) 2;
+  }
+  100% {
+    border-image: linear-gradient(to right, whitesmoke, #218be6, darkblue) 2;
   }
 }
