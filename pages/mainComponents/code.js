@@ -9,7 +9,7 @@ export default function Code(props) {
       padding="lg"
       radius="md"
       withBorder
-      className={styles.card}
+      className={styles.code}
     >
       <Card.Section>
         <img

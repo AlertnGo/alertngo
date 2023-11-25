@@ -12,6 +12,7 @@ import {
 import {
   IconBike,
   IconCar,
+  IconCat,
   IconMan,
   IconMotorbike,
   IconPlus,
@@ -21,9 +22,10 @@ import { useState } from "react";
 
 const mockdata = [
   { title: "Voiture", icon: IconCar, color: "violet" },
-  { title: "Velo", icon: IconBike, color: "red" },
+  { title: "Vélo", icon: IconBike, color: "red" },
   { title: "Moto", icon: IconMotorbike, color: "indigo" },
   { title: "Personnel", icon: IconMan, color: "teal" },
+  { title: "Animaux", icon: IconCat, color: "yellow" },
   { title: "Autre", icon: IconPlus, color: "yellow" },
 ];
 
