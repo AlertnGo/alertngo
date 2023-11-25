@@ -26,7 +26,7 @@ const mockdata = [
   { title: "Moto", icon: IconMotorbike, color: "indigo" },
   { title: "Personnel", icon: IconMan, color: "teal" },
   { title: "Animaux", icon: IconCat, color: "yellow" },
-  { title: "Autre", icon: IconPlus, color: "yellow" },
+  { title: "Autre", icon: IconPlus, color: "cyan" },
 ];
 
 export default function AddCode() {
@@ -56,7 +56,7 @@ export default function AddCode() {
   return (
     <Card radius="md" className={styles.card}>
       <Input.Wrapper size="md" label="  Nom du QR code">
-        <Input placeholder="BMW M3" />
+        <Input placeholder="Nom de code" />
       </Input.Wrapper>
 
       <Space h="md" />

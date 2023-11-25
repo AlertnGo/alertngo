@@ -27,6 +27,13 @@
 
 @media (max-width: 900px) {
   .price {
-    background: #000;
+    .priceContainer {
+      flex-direction: column;
+      gap: var(--gap);
+      width: 100%;
+      .priceCard {
+        width: 100%;
+      }
+    }
   }
 }
