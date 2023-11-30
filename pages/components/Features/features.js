@@ -66,7 +66,7 @@ export default function Features() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container className={styles.container} size="lg" py="xl">
       <Title order={1} className={styles.title} ta="center" mt="sm" mx="sm">
         Alertngo
         <Badge color="blue" variant="light">
