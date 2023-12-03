@@ -1,0 +1,32 @@
+.contact {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap);
+    padding: var(--gap);
+    background: #3683e176;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: var(--maincolor);
+      border: 2px solid var(--maincolor);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    background: #000;
+  }
+}

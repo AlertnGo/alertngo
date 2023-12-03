@@ -1,5 +1,6 @@
-import { Avatar, Group, Text } from "@mantine/core";
+import { Avatar, Badge, Group, Space, Text } from "@mantine/core";
 import { IconHeart } from "@tabler/icons-react";
+import styles from "./profile.module.scss";
 
 export default function Profile() {
   return (
@@ -16,13 +17,17 @@ export default function Profile() {
           </Text>
           <IconHeart size={20} fill="red" />
         </Group>
-        <Text size="sm" c="dimmed">
-          Depuis octobre 2021
-        </Text>
+        <Badge color="blue" mx={10}>
+          Pro
+        </Badge>
+        <Badge color="indigo">100 points</Badge>
+        <Space h={50} />
 
         <div>
-          <h2>Contacts</h2>
-          <ul>
+          <Text size="lg" c="dimmed" mb={10}>
+            Contacts
+          </Text>
+          <ul className={styles.contact}>
             <li>Notifier avec alertngo</li>
             <li>Appeler</li>
             <li>Envoyer un message</li>

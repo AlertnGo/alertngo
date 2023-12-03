@@ -14,12 +14,7 @@ export default function MainUser() {
   return (
     <div>
       <Group wrap="nowrap">
-        <Avatar
-          src="https://avatars.githubusercontent.com/u/64093538?v=4"
-          alt="Vishnu Gopy"
-          size={100}
-          radius="7px"
-        />
+        <Avatar src="" alt="Vishnu Gopy" size={100} radius="7px" />
         <div>
           <Text size="lg" fw={500} tt="capitalize">
             vishnugopy10
