@@ -15,7 +15,8 @@ export default function MainUser() {
     <div>
       <Group wrap="nowrap">
         <Avatar
-          src="https://media.licdn.com/dms/image/D4E03AQHeZgEkLr9U8g/profile-displayphoto-shrink_400_400/0/1664101581696?e=1701907200&v=beta&t=cm19sx8iOnLHxeZ8g1Vssb-rEcf0h_mVTeByDi1aTM4"
+          src="https://avatars.githubusercontent.com/u/64093538?v=4"
+          alt="Vishnu Gopy"
           size={100}
           radius="7px"
         />
@@ -33,7 +34,7 @@ export default function MainUser() {
           <Text size="sm" c="dimmed">
             Depuis octobre 2021
           </Text>
-          <Button variant="light" leftSection={<IconUserEdit size={14} />}>
+          <Button variant="outline" leftSection={<IconUserEdit size={14} />}>
             Modifier
           </Button>
         </div>
