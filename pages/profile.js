@@ -17,7 +17,7 @@ export default function Profile() {
           </Text>
           <IconHeart size={20} fill="red" />
         </Group>
-        <Badge color="blue" mx={10}>
+        <Badge color="blue" mr={10}>
           Pro
         </Badge>
         <Badge color="indigo">100 points</Badge>

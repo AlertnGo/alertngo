@@ -11,22 +11,24 @@
     align-items: center;
     justify-content: center;
     gap: var(--gap);
-    padding: var(--gap);
-    background: #3683e176;
+    padding: 10px;
+    background: whitesmoke;
     color: black;
     border-radius: 10px;
     border: 2px solid #fff;
     transition: all 0.3s ease-in-out;
     &:hover {
-      background: #fff;
-      color: var(--maincolor);
-      border: 2px solid var(--maincolor);
+      background: var(--maincolor);
+      color: var(--white);
     }
   }
 }
 
 @media (max-width: 900px) {
   .contact {
-    background: #000;
+    flex-direction: column;
+    li {
+      width: 100%;
+    }
   }
 }

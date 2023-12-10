@@ -85,16 +85,18 @@ export default function Features() {
         communiquer avec d'autres personnes à l'aide d'un code Qr.
       </Text>
 
-      <Text align="center">Rejoignez la liste d'attente</Text>
+      <Text align="center" mb={20}>
+        Rejoignez la liste d'attente
+      </Text>
       <Center>
-        <Group my={10} align="center">
+        <Group align="center">
           <Input
             leftSection={<IconAt size={16} />}
             variant="filled"
             placeholder="Votre email Ici"
-            size="md"
+            size="sm"
           />
-          <Button size="md">M'ajouter</Button>
+          <Button size="sm">M'ajouter</Button>
         </Group>
       </Center>
 
