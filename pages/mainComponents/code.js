@@ -25,7 +25,15 @@ export default function Code(props) {
         </Text>
       </Group>
 
-      <Button size="md" variant="white" color="blue" mt={5}>
+      <Button
+        size="md"
+        variant="white"
+        color="blue"
+        mt={5}
+        onClick={() => {
+          window.location.href = "/editqr";
+        }}
+      >
         Modifier
       </Button>
     </Card>
