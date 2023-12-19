@@ -1,11 +1,10 @@
 import { Card, Text, Button, Group } from "@mantine/core";
-import { IconShare } from "@tabler/icons-react";
 import styles from "./mainStyle.module.scss";
 
 export default function Code(props) {
   return (
     <Card
-      shadow="sm"
+      shadow="xs"
       padding="lg"
       radius="md"
       withBorder
@@ -26,7 +25,7 @@ export default function Code(props) {
         </Text>
       </Group>
 
-      <Button variant="outline" color="blue" radius="md" mt={5}>
+      <Button size="md" variant="white" color="blue" mt={5}>
         Modifier
       </Button>
     </Card>

@@ -26,10 +26,12 @@ export default function MainUser() {
               vishnugopy
             </Text>
           </Group>
-          <Text size="sm" c="dimmed">
-            Depuis octobre 2021
-          </Text>
-          <Button variant="outline" leftSection={<IconUserEdit size={14} />}>
+
+          <Button
+            variant="outline"
+            size="xs"
+            leftSection={<IconUserEdit size={14} />}
+          >
             Modifier
           </Button>
         </div>
