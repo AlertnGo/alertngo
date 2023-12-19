@@ -1,5 +1,4 @@
 .header {
-  padding: var(--gap);
   width: var(--max-width);
   margin: var(--gap) auto;
   border-radius: var(--border-radius);
@@ -7,7 +6,9 @@
   align-items: center;
   justify-content: space-between;
   background: var(--lightwhite);
+  overflow: hidden;
   img {
+    margin-left: 10px;
     width: 50px;
     height: 100%;
   }
@@ -16,12 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 
     a {
+      width: auto;
+      padding: var(--gap);
       transition: all 0.2s ease-in-out;
       &:hover {
-        color: var(--maincolor);
+        background: rgba(255, 255, 255, 0.4);
       }
     }
   }

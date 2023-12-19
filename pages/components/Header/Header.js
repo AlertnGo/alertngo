@@ -11,9 +11,15 @@ export default function Header() {
         <img src="logo.svg" alt="logo" />
       </Link>
       <nav>
-        <Link href="/main">App</Link>
-        <Link href="/price">Prix</Link>
-        <Link href="/signin">Se connecter</Link>
+        <Link href="/main">
+          <Button variant="transparent">App</Button>
+        </Link>
+        <Link href="/price">
+          <Button variant="transparent">Prix</Button>
+        </Link>
+        <Link href="/signin">
+          <Button variant="outline">Se connecter</Button>
+        </Link>
         <Link href="/login">
           <Button>S'inscrire </Button>
         </Link>
