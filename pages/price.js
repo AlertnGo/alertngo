@@ -11,7 +11,7 @@ export default function MainCode() {
           <Card className={styles.priceCard} withBorder my="xs">
             <h3>Basic</h3>
             <h2>Free</h2>
-            <p>1€ par autocollant</p>
+            <p>2€ par autocollant</p>
             <p>Jusqu'à 3 QR codes</p>
             <p> Notifications sur l'application et par email </p>
             <Button variant="outline" disabled>
@@ -21,9 +21,21 @@ export default function MainCode() {
           <Card className={styles.priceCard} withBorder my="xs">
             <h3>Pro</h3>
             <h2>3€/mois</h2>
-            <p>10 autocollant gratuits puis 0.20€ par autocollant </p>
+            <p>10 autocollant gratuits puis 0.50€ par autocollant </p>
             <p>Jusqu'à 100 QR codes</p>
             <p>Notifications sur l'applictaion , par message et par email </p>
+            <p>Communiquer sur l'application </p>
+
+            <Button variant="outline">Je m'engage</Button>
+          </Card>
+          <Card className={styles.priceCard} withBorder my="xs">
+            <h3>One</h3>
+            <h2>99€ une seul fois</h2>
+            <p>50 autocollant gratuits puis 0.25€ par autocollant </p>
+            <p>QR codes illimté</p>
+            <p>Notifications sur l'applictaion , par message et par email </p>
+            <p>Communiquer sur l'application </p>
+            <p>5 ans de mise à jour </p>
             <Button variant="outline">Je m'engage</Button>
           </Card>
         </div>
