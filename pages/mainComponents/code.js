@@ -1,7 +1,9 @@
 import { Card, Text, Button, Group } from "@mantine/core";
 import styles from "./mainStyle.module.scss";
+import { useRouter } from "next/router";
 
 export default function Code(props) {
+  const router = useRouter();
   return (
     <Card
       shadow="xs"
@@ -30,9 +32,7 @@ export default function Code(props) {
         variant="white"
         color="blue"
         mt={5}
-        onClick={() => {
-          window.location.href = "/editqr";
-        }}
+        onClick={() => router.push("/editqr/" + props.id)}
       >
         Modifier
       </Button>
