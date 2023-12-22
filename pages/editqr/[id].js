@@ -1,14 +1,41 @@
-import { useParams } from "next/navigation";
 import styles from "./editqr.module.scss";
-import React, { useEffect, useRef } from "react";
+import { Button, Text } from "@mantine/core";
+import { useRouter } from "next/router";
+import Logo from "../../public/logo.svg";
+import QRCODE from "./qrcode.svg";
+import Image from "next/image";
 
 export default function EditQr() {
-  const id = useParams().id;
+  const router = useRouter();
 
   return (
     <main>
-      <section>
-        <div className={styles.qrcode}>QR CODE {id} </div>
+      <section className={styles.editqr}>
+        <div className={styles.qrcode}>
+          <Image src={QRCODE} alt="QR Code" width={250} height={250} />
+          <Text size="xl" c="dimmed">
+            #{router.query.id}
+          </Text>
+
+          <div className={styles.bottomBar}>
+            <Text size="md" c="dimmed">
+              Alertngo
+            </Text>
+            <Image src={Logo} alt="logo" width={50} />
+          </div>
+        </div>
+        <div className={styles.data}>
+          <p>Nom : Velo</p>
+          <p>Date de création : 12/12/2021</p>
+          <p>Statut : Actif</p>
+          <p>Nombre de scan : 12</p>
+          <Button variant="light" color="blue" size="xs">
+            Imprimer le QR code
+          </Button>
+          <Button variant="light" color="blue" size="xs">
+            Modifier les informations
+          </Button>
+        </div>
       </section>
     </main>
   );
