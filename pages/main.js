@@ -1,6 +1,7 @@
 import styles from "./main.module.scss";
 import { useState } from "react";
-import { NavLink } from "@mantine/core";
+import { NavLink, Link } from "@mantine/core";
+import { useRouter } from "next/router";
 import {
   IconHeart,
   IconQrcode,
@@ -13,32 +14,34 @@ import MainCode from "./mainComponents/mainCode";
 import MainFavourite from "./mainComponents/mainFavourite";
 
 export default function Main() {
+  const router = useRouter();
   const [currentMode, setCurrentMode] = useState(1);
   return (
     <>
       <div className={styles.mobileNav}>
         <IconUserScan
+          onClick={() => router.push("/main?mode=1")}
           size="30px"
           stroke={1.5}
-          onClick={() => setCurrentMode(1)}
           color={currentMode === 1 ? "#218BE6" : "#00000082"}
         />
+
         <IconQrcode
+          onClick={() => router.push("/main?mode=2")}
           size="30px"
           stroke={1.5}
-          onClick={() => setCurrentMode(2)}
           color={currentMode === 2 ? "#218BE6" : "#00000082"}
         />
         <IconHeart
+          onClick={() => router.push("/main?mode=3")}
           size="30px"
           stroke={1.5}
-          onClick={() => setCurrentMode(3)}
           color={currentMode === 3 ? "#218BE6" : "#00000082"}
         />
         <IconUser
+          onClick={() => router.push("/main?mode=4")}
           size="30px"
           stroke={1.5}
-          onClick={() => setCurrentMode(4)}
           color={currentMode === 4 ? "#218BE6" : "#00000082"}
         />
       </div>
@@ -47,7 +50,7 @@ export default function Main() {
         <section className={styles.mainGride}>
           <div className={styles.left}>
             <NavLink
-              onClick={() => setCurrentMode(1)}
+              onClick={() => router.push("/main?mode=1")}
               label="Trouver"
               leftSection={
                 <IconUserScan
@@ -58,7 +61,7 @@ export default function Main() {
               }
             />
             <NavLink
-              onClick={() => setCurrentMode(2)}
+              onClick={() => router.push("/main?mode=2")}
               label="Mes Codes"
               leftSection={
                 <IconQrcode
@@ -69,7 +72,7 @@ export default function Main() {
               }
             />
             <NavLink
-              onClick={() => setCurrentMode(3)}
+              onClick={() => router.push("/main?mode=3")}
               label="Favoris"
               leftSection={
                 <IconHeart
@@ -80,7 +83,7 @@ export default function Main() {
               }
             />
             <NavLink
-              onClick={() => setCurrentMode(4)}
+              onClick={() => router.push("/main?mode=4")}
               label="Profil"
               leftSection={
                 <IconUser
@@ -93,14 +96,10 @@ export default function Main() {
           </div>
 
           <div className={styles.right}>
-            {
-              {
-                1: <MainScan />,
-                2: <MainCode />,
-                3: <MainFavourite />,
-                4: <MainUser />,
-              }[currentMode]
-            }
+            {router.query.mode === "1" && <MainScan />}
+            {router.query.mode === "2" && <MainCode />}
+            {router.query.mode === "3" && <MainFavourite />}
+            {router.query.mode === "4" && <MainUser />}
           </div>
         </section>
       </main>

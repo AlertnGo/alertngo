@@ -1,7 +1,6 @@
 import styles from "./editqr.module.scss";
 import { Button, Text } from "@mantine/core";
 import { useRouter } from "next/router";
-import Logo from "../../public/logo.svg";
 import QRCODE from "./qrcode.svg";
 import Image from "next/image";
 
@@ -21,7 +20,7 @@ export default function EditQr() {
             <Text size="md" c="dimmed">
               Alertngo
             </Text>
-            <Image src={Logo} alt="logo" width={50} />
+            <Image src="/logo.svg" alt="logo" width={50} height={50} />
           </div>
         </div>
         <div className={styles.data}>

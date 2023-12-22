@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <Image src="logo.svg" alt="logo" width={50} height={50} />
+        <Image src="/logo.svg" alt="logo" width={50} height={50} />
       </Link>
       <nav className={styles.menuPc}>
         <Link href="/main">App</Link>
