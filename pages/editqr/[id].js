@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function EditQr() {
   const router = useRouter();
+  const { id } = router.query;
 
   return (
     <main>
@@ -13,7 +14,7 @@ export default function EditQr() {
         <div className={styles.qrcode}>
           <Image src={QRCODE} alt="QR Code" width={250} height={250} />
           <Text size="xl" c="dimmed">
-            #{router.query.id}
+            #{id}
           </Text>
 
           <div className={styles.bottomBar}>
@@ -28,10 +29,10 @@ export default function EditQr() {
           <p>Date de création : 12/12/2021</p>
           <p>Statut : Actif</p>
           <p>Nombre de scan : 12</p>
-          <Button variant="light" color="blue" size="xs">
+          <Button variant="light" color="blue" size="sm">
             Imprimer le QR code
           </Button>
-          <Button variant="light" color="blue" size="xs">
+          <Button variant="light" color="blue" size="sm">
             Modifier les informations
           </Button>
         </div>

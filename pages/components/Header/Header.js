@@ -13,7 +13,7 @@ export default function Header() {
         <Image src="/logo.svg" alt="logo" width={50} height={50} />
       </Link>
       <nav className={styles.menuPc}>
-        <Link href="/main">App</Link>
+        <Link href="/main?mode=1">App</Link>
         <Link href="/price">Prix</Link>
         <Link href="/signin">
           <Button variant="outline">Se connecter</Button>
@@ -31,7 +31,7 @@ export default function Header() {
       />
       <Drawer opened={opened} onClose={close} title="Menu">
         <div className={styles.menulist}>
-          <Link href="/main" onClick={close}>
+          <Link href="/main?mode=1" onClick={close}>
             App
           </Link>
           <Link href="/price" onClick={close}>
