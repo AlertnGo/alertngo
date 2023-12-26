@@ -1,4 +1,4 @@
-import { Avatar, Badge, Group, Space, Text } from "@mantine/core";
+import { Avatar, Badge, Button, Group, Space, Text } from "@mantine/core";
 import {
   IconHeart,
   IconCalculator,
@@ -8,6 +8,7 @@ import {
   IconBrandTwitter,
   IconBellPlus,
   IconPhonePlus,
+  IconCirclePlus,
 } from "@tabler/icons-react";
 import styles from "./profile.module.scss";
 
@@ -24,7 +25,9 @@ export default function Profile() {
           <Text size="xl" fw={500} tt="capitalize">
             vishnugopy10
           </Text>
-          <IconHeart size={20} fill="red" />
+          <Button variant="white" color="blue" m={0} p={0}>
+            <IconCirclePlus size={25} />
+          </Button>
         </Group>
         <Badge color="blue" mr={10}>
           Pro
