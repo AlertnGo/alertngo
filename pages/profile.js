@@ -1,5 +1,14 @@
 import { Avatar, Badge, Group, Space, Text } from "@mantine/core";
-import { IconHeart } from "@tabler/icons-react";
+import {
+  IconHeart,
+  IconCalculator,
+  IconMessage2Plus,
+  IconBrandInstagram,
+  IconBrandFacebook,
+  IconBrandTwitter,
+  IconBellPlus,
+  IconPhonePlus,
+} from "@tabler/icons-react";
 import styles from "./profile.module.scss";
 
 export default function Profile() {
@@ -28,12 +37,30 @@ export default function Profile() {
             Contacts
           </Text>
           <ul className={styles.contact}>
-            <li>Notifier avec alertngo</li>
-            <li>Appeler</li>
-            <li>Envoyer un message</li>
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Twitter</li>
+            <li>
+              <IconBellPlus size={20} />
+              <p>Notifier avec alertngo</p>
+            </li>
+            <li>
+              <IconPhonePlus size={20} />
+              <p>Appeler</p>
+            </li>
+            <li>
+              <IconMessage2Plus size={20} />
+              <p>Envoyer un message</p>
+            </li>
+            <li>
+              <IconBrandInstagram size={20} />
+              <p>Instagram</p>
+            </li>
+            <li>
+              <IconBrandFacebook size={20} />
+              <p>Facebook</p>
+            </li>
+            <li>
+              <IconBrandTwitter size={20} />
+              <p>X / Twitter</p>
+            </li>
           </ul>
         </div>
       </section>
